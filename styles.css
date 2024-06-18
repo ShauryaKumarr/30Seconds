@@ -1,0 +1,47 @@
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.fade-out {
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.popup-link {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.sliding-image {
+    position: absolute;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: transform 10s linear, opacity 1s ease-in-out;
+}
+
+#incorrect-timer {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 5s linear;
+}
